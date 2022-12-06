@@ -37,6 +37,8 @@ object Libraries {
   const val alerter = "com.github.tapadoo:alerter:${Versions.alerter}"
   const val coil = "io.coil-kt:coil:${Versions.coil}"
   const val splash = "androidx.core:core-splashscreen:${Versions.splash}"
+  const val photoView = "com.github.chrisbanes:PhotoView:${Versions.photoView}"
+  const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayout}"
 
   // Utils
   const val playServices = "com.google.android.gms:play-services-auth:${Versions.playServices}"
@@ -53,6 +55,9 @@ object Libraries {
   const val playServicesLocation =
     "com.google.android.gms:play-services-location:${Versions.playServicesLocation}"
   const val rxLocation = "com.github.ShabanKamell:RxLocation:${Versions.rxLocation}"
+
+  //LoadImage
+  const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
 
 
 }

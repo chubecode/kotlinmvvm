@@ -30,6 +30,8 @@ object Versions {
   const val alerter = "7.2.4"
   const val coil = "1.3.2"
   const val splash = "1.0.0"
+  const val photoView = "2.3.0"
+  const val swipeRefreshLayout = "1.1.0"
 
   // Utils
   const val playServices = "19.2.0"
@@ -44,4 +46,7 @@ object Versions {
   const val map = "17.0.1"
   const val playServicesLocation = "18.0.0"
   const val rxLocation = "1.0"
+
+  //Load Image
+  const val glide = "4.12.0"
 }

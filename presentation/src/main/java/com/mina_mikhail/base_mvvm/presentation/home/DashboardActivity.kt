@@ -13,7 +13,7 @@ import com.mina_mikhail.base_mvvm.presentation.databinding.ActivityHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeActivity : BaseActivity<ActivityHomeBinding>() {
+class DashboardActivity : BaseActivity<ActivityHomeBinding>() {
 
   companion object {
     const val ACTION_OPEN_SPECIFIC_PAGE = "ACTION_OPEN_SPECIFIC_PAGE"

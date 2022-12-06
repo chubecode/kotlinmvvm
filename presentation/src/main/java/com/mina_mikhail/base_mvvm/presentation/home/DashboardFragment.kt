@@ -3,6 +3,7 @@ package com.mina_mikhail.base_mvvm.presentation.home
 import androidx.fragment.app.viewModels
 import codes.mina_mikhail.action_chooser.ActionChooserHelper
 import codes.mina_mikhail.action_chooser.ChooserAction
+import codes.mina_mikhail.images_slider.ImagesSliderHelper
 import codes.mina_mikhail.pretty_pop_up.PrettyPopUpHelper
 import com.mina_mikhail.base_mvvm.presentation.R
 import com.mina_mikhail.base_mvvm.presentation.base.BaseFragment
@@ -10,18 +11,18 @@ import com.mina_mikhail.base_mvvm.presentation.base.extensions.getMyColor
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.getMyString
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.hide
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.showMessage
-import com.mina_mikhail.base_mvvm.presentation.databinding.FragmentHomeBinding
+import com.mina_mikhail.base_mvvm.presentation.databinding.FragmentDashboardBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment : BaseFragment<FragmentHomeBinding>() {
+class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
 
-  private val viewModel: HomeViewModel by viewModels()
+  private val viewModel: DashboardViewModel by viewModels()
 
   private lateinit var actions: ArrayList<ChooserAction>
 
   override
-  fun getLayoutId() = R.layout.fragment_home
+  fun getLayoutId() = R.layout.fragment_dashboard
 
   override
   fun setBindingVariables() {
@@ -31,8 +32,25 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
   override
   fun setUpViews() {
     setUpToolBar()
-
     setActionsDummyData()
+    setUpImageSlider()
+  }
+
+  private fun setUpImageSlider() {
+    activity?.let { act ->
+      ImagesSliderHelper.Builder(activity = act, lifecycle = lifecycle)
+        .setSliderContainer(binding.layoutImageSlider)
+        .setImages(
+          listOf(
+            "https://random.imagecdn.app/500/150",
+            "https://random.imagecdn.app/500/150",
+            "https://random.imagecdn.app/500/150",
+            "https://random.imagecdn.app/500/150",
+            "https://random.imagecdn.app/500/150"
+          )
+        )
+        .create()
+    }
   }
 
   private fun setUpToolBar() {

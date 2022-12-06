@@ -18,7 +18,7 @@ import com.mina_mikhail.base_mvvm.presentation.base.extensions.getMyColor
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.openActivityAndClearStack
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.showMessage
 import com.mina_mikhail.base_mvvm.presentation.databinding.FragmentIntroBinding
-import com.mina_mikhail.base_mvvm.presentation.home.HomeActivity
+import com.mina_mikhail.base_mvvm.presentation.home.DashboardActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -106,6 +106,6 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
   }
 
   private fun openHome() {
-    openActivityAndClearStack(HomeActivity::class.java)
+    openActivityAndClearStack(DashboardActivity::class.java)
   }
 }

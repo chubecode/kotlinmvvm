@@ -10,7 +10,7 @@ import com.mina_mikhail.base_mvvm.presentation.R
 import com.mina_mikhail.base_mvvm.presentation.base.BaseActivity
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.openActivityAndClearStack
 import com.mina_mikhail.base_mvvm.presentation.databinding.ActivitySplashBinding
-import com.mina_mikhail.base_mvvm.presentation.home.HomeActivity
+import com.mina_mikhail.base_mvvm.presentation.home.DashboardActivity
 import com.mina_mikhail.base_mvvm.presentation.intro.IntroActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,7 +37,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
       val targetActivity = if (viewModel.isFirstTime()) {
         IntroActivity::class.java
       } else {
-        HomeActivity::class.java
+        DashboardActivity::class.java
       }
       openActivityAndClearStack(targetActivity)
     }, 2000)
