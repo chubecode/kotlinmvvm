@@ -13,10 +13,10 @@ import android.widget.TextView.BufferType.SPANNABLE
 import androidx.fragment.app.viewModels
 import com.mina_mikhail.base_mvvm.presentation.R
 import com.mina_mikhail.base_mvvm.presentation.R.color
-import com.mina_mikhail.base_mvvm.presentation.auth.AuthActivity
 import com.mina_mikhail.base_mvvm.presentation.base.BaseFragment
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.getMyColor
 import com.mina_mikhail.base_mvvm.presentation.base.extensions.openActivityAndClearStack
+import com.mina_mikhail.base_mvvm.presentation.base.extensions.showMessage
 import com.mina_mikhail.base_mvvm.presentation.databinding.FragmentIntroBinding
 import com.mina_mikhail.base_mvvm.presentation.home.HomeActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -102,7 +102,7 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
   }
 
   private fun openLogIn() {
-    openActivityAndClearStack(AuthActivity::class.java)
+    showMessage("openLogIn")
   }
 
   private fun openHome() {

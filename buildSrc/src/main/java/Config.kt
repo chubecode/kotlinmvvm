@@ -32,10 +32,10 @@ object Config {
     const val domain = ":domain"
     const val data = ":data"
     const val presentation = ":presentation"
-    const val prettyPopUp = ":prettyPopUp"
-    const val actionChooser = ":actionChooser"
-    const val onboarding = ":onboarding"
-    const val imagesSlider = ":imagesSlider"
+    const val prettyPopUp = ":features:prettyPopUp"
+    const val actionChooser = ":features:actionChooser"
+    const val onboarding = ":features:onboarding"
+    const val imagesSlider = ":features:imagesSlider"
   }
 
   object Environments {

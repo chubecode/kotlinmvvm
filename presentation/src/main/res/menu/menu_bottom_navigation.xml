@@ -4,16 +4,10 @@
   <item
       android:id="@+id/nav_home"
       android:icon="@drawable/nav_home_selector"
-      android:title="@string/home" />
+      android:title="@string/dashboard" />
 
   <item
       android:id="@+id/nav_search"
       android:icon="@drawable/nav_search_selector"
       android:title="@string/search" />
-
-  <item
-      android:id="@+id/nav_account"
-      android:icon="@drawable/nav_account_selector"
-      android:title="@string/account" />
-
 </menu>

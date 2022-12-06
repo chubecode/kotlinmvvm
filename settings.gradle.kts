@@ -14,3 +14,4 @@ rootDir
   .forEach {
     include(":${it.name}")
   }
+include("features:onboarding","features:actionChooser","features:imagesSlider","features:prettyPopUp",)

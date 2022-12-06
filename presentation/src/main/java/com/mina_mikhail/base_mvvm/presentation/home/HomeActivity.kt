@@ -59,7 +59,6 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
     val graphIds = listOf(
       R.navigation.nav_home,
       R.navigation.nav_search,
-      R.navigation.nav_account
     )
 
     val controller = binding.bottomNavigationView.setupWithNavController(

@@ -36,7 +36,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
   }
 
   private fun setUpToolBar() {
-    binding.includedToolbar.toolbarTitle.text = getMyString(R.string.home)
+    binding.includedToolbar.toolbarTitle.text = getMyString(R.string.dashboard)
     binding.includedToolbar.backIv.hide()
   }
 

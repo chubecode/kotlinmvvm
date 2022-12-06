@@ -9,9 +9,8 @@
   <string name="some_error">Some error occurred, try again later</string>
 
     <!-- Home -->
-  <string name="home">Home</string>
+  <string name="dashboard">Dashboard</string>
   <string name="search">Search</string>
-  <string name="account">Account</string>
 
   <!-- Tutorial -->
 
