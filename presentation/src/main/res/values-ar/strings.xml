@@ -1,22 +1,19 @@
 <resources>
   <!-- General Strings -->
-  <string name="hide">اخفاء</string>
-  <string name="connection_error">خطأ فى الاتصال</string>
+    <string name="connection_error">خطأ فى الاتصال</string>
   <string name="no_internet">لا يوجد اتصال بالانترنت، برجاء المحاولة فى وقت لاحق</string>
   <string name="retry">إعادة المحاولة</string>
   <string name="cancel">إلغاء</string>
   <string name="some_error">حدث خطأ ما، برجاء المحاولة فى وقت لاحق</string>
-  <string name="list_no_result">عفواً، لا يوجد بيانات</string>
 
-  <!-- Home -->
+    <!-- Home -->
   <string name="home">الرئيسية</string>
   <string name="search">البحث</string>
   <string name="account">حسابى</string>
 
   <!-- Tutorial -->
-  <string name="tutorial">شرح التطبيق</string>
 
-  <!-- Intro -->
+    <!-- Intro -->
   <string name="log_in_sign_up">تسجيل الدخول/انشاء حساب</string>
 
   <!-- Log In -->

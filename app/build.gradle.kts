@@ -1,4 +1,3 @@
-import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
 
 plugins {
   id(Config.Plugins.androidApplication)
@@ -25,7 +24,7 @@ android {
 
   buildTypes {
     getByName("debug") {
-      resValue("string", "google_api_key", gradleLocalProperties(rootDir).getProperty("GOOGLE_API_KEY"))
+//      resValue("string", "google_api_key", gradleLocalProperties(rootDir).getProperty("GOOGLE_API_KEY"))
       manifestPlaceholders["appName"] = "@string/app_name_debug"
       manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_debug"
       manifestPlaceholders["appRoundIcon"] = "@mipmap/ic_launcher_debug_round"
@@ -48,7 +47,7 @@ android {
       isMinifyEnabled = true
       isShrinkResources = true
 
-      resValue("string", "google_api_key", gradleLocalProperties(rootDir).getProperty("GOOGLE_API_KEY"))
+//      resValue("string", "google_api_key", gradleLocalProperties(rootDir).getProperty("GOOGLE_API_KEY"))
       manifestPlaceholders["appName"] = "@string/app_name"
       manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher"
       manifestPlaceholders["appRoundIcon"] = "@mipmap/ic_launcher_round"

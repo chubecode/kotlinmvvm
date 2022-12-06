@@ -10,7 +10,7 @@
     <item name="colorSecondaryVariant">@color/colorAccentDark</item>
     <item name="colorOnSecondary">@color/black</item>
     <!-- Status bar color. -->
-    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
 
     <!-- App Font -->
     <item name="fontFamily">@font/almarai_light</item>
@@ -33,21 +33,6 @@
   </style>
 
   <style name="TextMediumFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/almarai_medium</item>
-  </style>
-
-  <style name="TextRegularFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/almarai_light</item>
-  </style>
-
-  <style name="TitleRegularFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/syncopate_regular</item>
-  </style>
-
-  <style name="ArabicTextRegularFont">
     <item name="android:textSize">@dimen/text_size14</item>
     <item name="fontFamily">@font/almarai_medium</item>
   </style>

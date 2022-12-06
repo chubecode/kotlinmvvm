@@ -2,6 +2,7 @@ package com.mina_mikhail.base_mvvm.presentation.account
 
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import codes.mina_mikhail.images_slider.ImagesSliderHelper
 import codes.mina_mikhail.pretty_pop_up.PrettyPopUpHelper
 import com.mina_mikhail.base_mvvm.domain.utils.Resource
 import com.mina_mikhail.base_mvvm.presentation.R
@@ -33,6 +34,18 @@ class AccountFragment : BaseFragment<FragmentAccountBinding>() {
   override
   fun setUpViews() {
     setUpToolBar()
+    activity?.let { act ->
+      ImagesSliderHelper.Builder(activity = act, lifecycle)
+        .setSliderContainerResourceID(binding.slider.id)
+        .setImages(listOf(
+          "https://random.imagecdn.app/500/150",
+          "https://random.imagecdn.app/500/150",
+          "https://random.imagecdn.app/500/150",
+          "https://random.imagecdn.app/500/150",
+        ))
+        .create()
+    }
+
   }
 
   private fun setUpToolBar() {

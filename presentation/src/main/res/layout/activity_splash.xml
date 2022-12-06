@@ -12,13 +12,6 @@
       android:orientation="horizontal"
       >
 
-    <ImageView
-        android:layout_width="@dimen/dimen100"
-        android:layout_height="@dimen/dimen100"
-        android:layout_marginEnd="@dimen/dimen5"
-        app:srcCompat="@drawable/ic_app_logo"
-        tools:ignore="ContentDescription"
-        />
 
   </LinearLayout>
 

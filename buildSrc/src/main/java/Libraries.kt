@@ -36,6 +36,7 @@ object Libraries {
   const val loadingAnimations = "com.github.ybq:Android-SpinKit:${Versions.loadingAnimations}"
   const val alerter = "com.github.tapadoo:alerter:${Versions.alerter}"
   const val coil = "io.coil-kt:coil:${Versions.coil}"
+  const val splash = "androidx.core:core-splashscreen:${Versions.splash}"
 
   // Utils
   const val playServices = "com.google.android.gms:play-services-auth:${Versions.playServices}"
@@ -52,4 +53,6 @@ object Libraries {
   const val playServicesLocation =
     "com.google.android.gms:play-services-location:${Versions.playServicesLocation}"
   const val rxLocation = "com.github.ShabanKamell:RxLocation:${Versions.rxLocation}"
+
+
 }

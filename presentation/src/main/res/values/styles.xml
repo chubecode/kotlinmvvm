@@ -10,7 +10,7 @@
     <item name="colorSecondaryVariant">@color/colorAccentDark</item>
     <item name="colorOnSecondary">@color/black</item>
     <!-- Status bar color. -->
-    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
 
     <!-- App Font -->
     <item name="fontFamily">@font/poppins_light</item>
@@ -37,22 +37,7 @@
     <item name="fontFamily">@font/poppins_medium</item>
   </style>
 
-  <style name="TextRegularFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/poppins_light</item>
-  </style>
-
-  <style name="TitleRegularFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/syncopate_regular</item>
-  </style>
-
-  <style name="ArabicTextRegularFont">
-    <item name="android:textSize">@dimen/text_size14</item>
-    <item name="fontFamily">@font/almarai_medium</item>
-  </style>
-
-  <style name="CustomDialogAnimation" parent="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    <style name="CustomDialogAnimation" parent="Theme.MaterialComponents.DayNight.Dialog.Bridge">
     <item name="android:windowNoTitle">true</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorPrimary">@color/colorPrimary</item>
@@ -62,6 +47,21 @@
     <!-- Additionally if you want animations when dialog opening -->
     <!--    <item name="android:windowEnterAnimation">@anim/slide_up</item>-->
     <!--    <item name="android:windowExitAnimation">@anim/slide_down</item>-->
+  </style>
+
+  <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+    <!-- Set the splash screen background, animated icon, and animation duration. -->
+    <item name="windowSplashScreenBackground">@color/black</item>
+
+    <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+         animated drawable. One of these is required. -->
+    <item name="windowSplashScreenAnimatedIcon">@drawable/splashavd</item>
+    <!-- Required for animated icons -->
+    <item name="windowSplashScreenAnimationDuration">200</item>
+
+    <!-- Set the theme of the Activity that directly follows your splash screen. -->
+    <!-- Required -->
+    <item name="postSplashScreenTheme">@style/Theme.AppTheme</item>
   </style>
 
 </resources>

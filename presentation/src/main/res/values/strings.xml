@@ -1,25 +1,21 @@
 <resources>
   <string name="app_name_debug" translatable="false">Base-MVVM-Debug</string>
-  <string name="app_name" translatable="false">Base-MVVM</string>
 
-  <!-- General Strings -->
-  <string name="hide">Hide</string>
-  <string name="connection_error">Connection Error</string>
+    <!-- General Strings -->
+    <string name="connection_error">Connection Error</string>
   <string name="no_internet">No internet connection please try again later</string>
   <string name="retry">Retry</string>
   <string name="cancel">Cancel</string>
   <string name="some_error">Some error occurred, try again later</string>
-  <string name="list_no_result">Sorry, There are no results here!</string>
 
-  <!-- Home -->
+    <!-- Home -->
   <string name="home">Home</string>
   <string name="search">Search</string>
   <string name="account">Account</string>
 
   <!-- Tutorial -->
-  <string name="tutorial">Tutorial</string>
 
-  <!-- Intro -->
+    <!-- Intro -->
   <string name="log_in_sign_up">Log In / Sign Up</string>
 
   <!-- Log In -->

@@ -50,6 +50,7 @@ dependencies {
   implementation(Libraries.loadingAnimations)
   implementation(Libraries.alerter)
   implementation(Libraries.coil)
+  implementation(Libraries.splash)
 
   // Utils
   implementation(Libraries.playServices)
@@ -70,6 +71,6 @@ dependencies {
   implementation(project(Config.Modules.domain))
   implementation(project(Config.Modules.prettyPopUp))
   implementation(project(Config.Modules.actionChooser))
-  implementation(project(Config.Modules.appTutorial))
+  implementation(project(Config.Modules.onboarding))
   implementation(project(Config.Modules.imagesSlider))
 }
